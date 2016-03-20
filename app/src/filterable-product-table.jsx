@@ -6,6 +6,10 @@ class FilterableProductTable extends React.Component {
 
   constructor() {
     super();
+
+    this.state = {
+      inStockOnly: true
+    };
   }
 
   render() {
@@ -21,7 +25,7 @@ class FilterableProductTable extends React.Component {
 
     return (
       <div>
-        <SearchBar />
+        <SearchBar inStockOnly={this.state.inStockOnly}/>
         <ProductTable products={products} />
       </div>
     )

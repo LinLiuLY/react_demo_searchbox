@@ -16,6 +16,7 @@ class SearchBar extends React.Component {
                 <p>
                     <input
                         type="checkbox"
+                        checked={this.props.inStockOnly}
                     />
                     {' '}
                     Only show products in stock
