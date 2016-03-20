@@ -1,5 +1,6 @@
 import React from 'react';
 import CategoryRow from './category-row';
+import ProductRow from './product-row';
 
 const ProductTable = ({products}) => {
     let rows = [],
@@ -11,6 +12,8 @@ const ProductTable = ({products}) => {
             <CategoryRow category={product.category} />
         )
       }
+
+      rows.push(<ProductRow product={product} />);
 
       lastCategory = product.category;
 
