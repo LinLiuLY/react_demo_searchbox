@@ -7,6 +7,11 @@ const ProductTable = ({products}) => {
         lastCategory = null;
 
     products.map((product)=>{
+
+      if(!product.stocked) {
+        return;
+      }
+
       if(product.category != lastCategory) {
         rows.push(
             <CategoryRow category={product.category} />
