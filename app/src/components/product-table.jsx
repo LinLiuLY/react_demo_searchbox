@@ -2,13 +2,13 @@ import React from 'react';
 import CategoryRow from './category-row';
 import ProductRow from './product-row';
 
-const ProductTable = ({products}) => {
+const ProductTable = ({products, inStockOnly}) => {
     let rows = [],
         lastCategory = null;
 
     products.map((product)=>{
 
-      if(!product.stocked) {
+      if(!product.stocked && inStockOnly) {
         return;
       }
 
