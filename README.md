@@ -11,11 +11,11 @@ BBefore start, Strongly recommend that learn this below first
 
 1. [Learn ES6](http://webapplog.com/es6/)
 
-1. [developing_with_webpack](http://survivejs.com/webpack_react/developing_with_webpack/)
+1. [Developing_with_webpack](http://survivejs.com/webpack_react/developing_with_webpack/)
 
-1. [react-using-refs-to-access-components](https://egghead.io/lessons/react-using-refs-to-access-components)
+1. [React-using-refs-to-access-components](https://egghead.io/lessons/react-using-refs-to-access-components)
 
-1. [Es5 thinking in React](https://facebook.github.io/react/docs/thinking-in-react.html)
+1. [Thinking in React](https://facebook.github.io/react/docs/thinking-in-react.html)
  
 
 ## Getting Started
@@ -52,8 +52,8 @@ javascript file.
 Tasking
 ---
 
-![Mockup](mockup/mock-1.png)
-![Mockup](mockup/mock-2.png)
+1. ![Mockup](mockup/mock-1.png)
+1. ![Mockup](mockup/mock-2.png)
 
 
 ### Add product list in the table. (15 min) 
@@ -76,7 +76,8 @@ Tasking
 
 1. Make the checkbox clickable.
 
-1. Pass the status of the checkbox to filterable-product-table.
+1. Pass the status of the checkbox to the filterable-product-table.
+
 
 ### Display the corresponding products when checkbox change . (10min)
 
