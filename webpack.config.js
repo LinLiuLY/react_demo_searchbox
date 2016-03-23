@@ -20,7 +20,7 @@ var common = {
 
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'React ES2015'
+            title: 'React Demo'
         })
     ],
 

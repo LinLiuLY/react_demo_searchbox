@@ -15,8 +15,24 @@ BBefore start, Strongly recommend that learn this below first
 
 1. [React-using-refs-to-access-components](https://egghead.io/lessons/react-using-refs-to-access-components)
 
+1. [React.createClass versus extends React.Component](https://toddmotto.com/react-create-class-versus-component/)
+
 1. [Thinking in React](https://facebook.github.io/react/docs/thinking-in-react.html)
+
+some reference
+
+1. [package.json in npm](https://docs.npmjs.com/files/package.json)
+
+1. [html-webpack-plugin](https://www.npmjs.com/package/html-webpack-plugin)
+
+1. [JSX in Depth](https://facebook.github.io/react/docs/jsx-in-depth.html)
  
+1. [HTML to JSX Compiler](https://facebook.github.io/react/html-jsx.html)
+
+1. [react-hot-loader](http://gaearon.github.io/react-hot-loader/getstarted/)
+
+1. [React Webpack Tutorial](http://jansoren.github.io/react-webpack-tutorial/)
+
 
 ## Getting Started
 
