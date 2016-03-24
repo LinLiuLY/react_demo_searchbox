@@ -6,6 +6,18 @@ class FilterableProductTable extends React.Component {
 
   constructor() {
     super();
+
+    this.state = {
+      inStockOnly: true
+    };
+
+    this.handleUserInput = this.handleUserInput.bind(this);
+  }
+
+  handleUserInput(inStockOnly) {
+    this.setState({
+      inStockOnly:inStockOnly
+    });
   }
 
   render() {
@@ -21,8 +33,14 @@ class FilterableProductTable extends React.Component {
 
     return (
       <div>
-        <SearchBar />
-        <ProductTable products={products} />
+        <SearchBar
+            inStockOnly={this.state.inStockOnly}
+            onUserInput={this.handleUserInput}
+        />
+        <ProductTable
+            products={products}
+            inStockOnly={this.state.inStockOnly}
+        />
       </div>
     )
   }

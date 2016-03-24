@@ -1,6 +1,28 @@
 import React from 'react';
+import CategoryRow from './category-row';
+import ProductRow from './product-row';
 
-const ProductTable = ({products}) => {
+const ProductTable = ({products, inStockOnly}) => {
+    let rows = [],
+        lastCategory = null;
+
+    products.map((product)=>{
+
+      if(!product.stocked && inStockOnly) {
+        return;
+      }
+
+      if(product.category != lastCategory) {
+        rows.push(
+            <CategoryRow category={product.category} />
+        )
+      }
+
+      rows.push(<ProductRow product={product} />);
+
+      lastCategory = product.category;
+
+    });
 
     return (
         <table>
@@ -10,7 +32,7 @@ const ProductTable = ({products}) => {
                 <th>Price</th>
             </tr>
             </thead>
-            <tbody></tbody>
+            <tbody>{rows}</tbody>
         </table>
     );
 }
